@@ -9,4 +9,7 @@ from eth_abi.abi import (  # NOQA
     is_encodable_type,
 )
 
-__version__ = pkg_resources.get_distribution('eth-abi').version
+try:
+    __version__ = pkg_resources.get_distribution('eth-abi-qtum').version
+except BaseException:
+    __version__ = '2.1.1'

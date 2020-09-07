@@ -16,7 +16,7 @@ extras_require = {
         "pytest-pythonpath>=0.7.1",
         "pytest-xdist==1.22.3",
         "tox>=2.9.1,<3",
-        "eth-hash[pycryptodome]",
+        "eth-hash-qtum[pycryptodomex]",
         HYPOTHESIS_REQUIREMENT,
     ],
     'lint': [
@@ -52,18 +52,18 @@ with open('./README.md') as readme:
 
 
 setup(
-    name='eth_abi',
+    name='eth-abi-qtum',
     # *IMPORTANT*: Don't manually change the version here. Use `make bump`, as described in readme
     version='2.1.1',
-    description="""eth_abi: Python utilities for working with Ethereum ABI definitions, especially encoding and decoding""",
+    description="""eth-abi-qtum: Python utilities for working with Ethereum ABI definitions, especially encoding and decoding""",
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='The Ethereum Foundation',
     author_email='snakecharmers@ethereum.org',
-    url='https://github.com/ethereum/eth-abi',
+    url='https://github.com/qtumproject/eth-abi',
     include_package_data=True,
     install_requires=[
-        'eth-utils>=1.2.0,<2.0.0',
+        'eth-utils-qtum>=1.2.0,<2.0.0',
         'eth-typing>=2.0.0,<3.0.0',
         'parsimonious>=0.8.0,<0.9.0',
     ],
@@ -72,7 +72,7 @@ setup(
     py_modules=['eth_abi'],
     license="MIT",
     zip_safe=False,
-    keywords='ethereum',
+    keywords='ethereum qtum',
     packages=find_packages(exclude=["tests", "tests.*"]),
     package_data={'eth_abi': ['py.typed']},
     classifiers=[

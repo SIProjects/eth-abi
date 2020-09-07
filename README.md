@@ -14,7 +14,7 @@ Read more in the [documentation on ReadTheDocs](https://eth-abi.readthedocs.io/)
 ## Quickstart
 
 ```sh
-pip install eth_abi
+pip install eth-abi-qtum
 ```
 
 ## Developer Setup
@@ -33,7 +33,7 @@ for information on how we do:
 You can set up your dev environment with:
 
 ```sh
-git clone git@github.com:ethereum/eth-abi.git
+git clone git@github.com:qtumproject/eth-abi.git
 cd eth-abi
 virtualenv -p python3 venv
 . venv/bin/activate
