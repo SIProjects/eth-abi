@@ -10,6 +10,6 @@ from eth_abi.abi import (  # NOQA
 )
 
 try:
-    __version__ = pkg_resources.get_distribution('eth-abi-qtum').version
+    __version__ = pkg_resources.get_distribution('eth-abi-sicash').version
 except BaseException:
     __version__ = '2.1.1'
